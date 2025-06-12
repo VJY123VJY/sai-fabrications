@@ -1,0 +1,74 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    padding: 40px;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Card style for each section */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h1, .card h3 {
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.card p, .card ul {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.card ul li::before {
+    content: "✔";
+    color: #4caf50;
+    margin-right: 10px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #1a237e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0d1b5c;
+}

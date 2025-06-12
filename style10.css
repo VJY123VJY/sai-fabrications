@@ -1,0 +1,151 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Sidebar Navigation */
+nav {
+    background-color: #2d3748;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #f1f5f9;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #3b4758;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4b5563;
+    color: #ffffff;
+}
+
+/* Main Content Area */
+.content {
+    margin-left: 240px;
+    padding: 30px;
+    min-height: 90vh;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+/* Buttons */
+button {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Forms */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f3f4f6;
+    color: #111827;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    nav a {
+        flex: 1;
+        text-align: center;
+        padding: 12px;
+        border-bottom: none;
+        border-right: 1px solid #3b4758;
+    }
+}

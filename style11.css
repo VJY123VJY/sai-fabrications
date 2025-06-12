@@ -1,0 +1,98 @@
+/* Base Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container to wrap title + form */
+.form-container {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 550px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Heading */
+.form-container h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Input & Textarea Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9fafb;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2563eb;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Textarea specific */
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Success Message Styling */
+.success {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 12px 15px;
+    border: 1px solid #10b981;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Simple Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

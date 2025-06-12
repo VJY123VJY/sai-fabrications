@@ -1,0 +1,94 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #1c1c1c, #2e2e2e);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form Heading */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Form Container */
+form {
+    background: #333;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form Inputs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #444;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    background: #555;
+    box-shadow: 0 0 5px #ffcc00;
+}
+
+/* Textarea */
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Submit Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #e6b800;
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
